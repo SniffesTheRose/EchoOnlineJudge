@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.text_button {
+	line-height:40px;
+	text-align:center;
+	position:relative;
+	width:auto;
+	height:40px;
+}
+
+div.line {
+	position:relative;
+	width:auto;
+	height:3px;
+	top:0px;
+}
+
+.ProblemTitle {
+	position:absolute;
+	color:rgb(100,100,100);
+	font-size:50px;
+	top: 15px;
+	left:100px;
+}
+
+.DescribeTitle {
+	font-size:35px;
+}
+
+.DescribeText {
+	font-size:20px;
+}

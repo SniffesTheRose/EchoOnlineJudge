@@ -1,0 +1,74 @@
+/* CSS Document */
+
+div.Left_Profile_Container {
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:40px;
+	position:relative;
+	height:100px;
+}
+
+div.Left_Profile_Image_Container {
+	margin:auto;
+	width:70px;
+	height:70px;
+}
+
+span.Badge_Point {
+	position:relative;
+	top:-70px;
+	left:30px
+}
+
+div.Left_Profile_Text {
+	font-size:20px;
+	margin-top:15px;
+	display:none;
+}
+
+div.Left_Naviqation:hover{
+	width:200px;
+}
+
+div.Left_Naviqation {
+	color:rgb(255,255,255);
+	z-index:1;
+	position:fixed;
+	left:0px;
+	height: 500px;
+	width:100px;
+	background-image:url(assets/LeftBackGround.jpg);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	-o-transition:width 0.5s;
+}
+
+div.Left_Naviqation a {
+	color:rgb(255,255,255);
+}
+
+div.Left_Naviqation_Container {
+	margin-top:15px;
+	margin-bottom:15px;
+	position:relative;
+	height:50px;
+}
+
+div.Left_Naviqation_Label {
+	position:absolute;
+	left:20px;
+	width:50px;
+}
+
+p.Left_Naviqation_Label_Text {
+	display:none;
+	font-size:20px;
+	position:relative;
+	width:auto;
+	left:100px;
+	line-height:50px;
+	vertical-align:central;
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.Container_for_Problem {
+	text-align:left;
+	position:relative;
+	width:auto;
+	height:auto;
+	background-color:#FFF;
+	box-shadow: 5px 5px 30px #CCCCCC;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:5px;
+	padding-left:50px;
+}
