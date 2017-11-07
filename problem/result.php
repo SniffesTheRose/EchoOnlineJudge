@@ -4,14 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "G:/Echo Online Judge/include.php" ?>
 <title>查看提交</title>
-<link href="../assets/Welcome.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<?php include "G:/Echo Online Judge/BaseInclude.php" ?>
     
     <div class="main">
-        <div class="content">
+        <div class="Container">
             <?php
                 $con = mysql_connect("localhost","root","qdc010325");
             
