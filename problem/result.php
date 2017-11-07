@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/Echo Online Judge/include.php" ?>
+<?php include "G:/EchoOnlineJudge/include.php" ?>
 <title>查看提交</title>
 </head>
 
 <body>
-	<?php include "G:/Echo Online Judge/BaseInclude.php" ?>
+	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
     <div class="main">
         <div class="Container">
