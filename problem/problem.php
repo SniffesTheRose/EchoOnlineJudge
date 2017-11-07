@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "G:/EchoOnlineJudge/include.php" ?>
-<link href="assets/problem.css" rel="stylesheet" />
+<link href="assets/problem.css" rel="stylesheet" type="text/css" />
 <link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
 <script src="assets/problem.js"></script>
 <?php

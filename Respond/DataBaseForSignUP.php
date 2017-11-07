@@ -30,7 +30,7 @@
 		mysql_query("INSERT INTO users (Name, Password, CreateDate, Email) VALUES ('" . $name . "', '" . $password . "', '"  . date("Y-m-d"). "', '" . $email . "')");
 		$ID = mysql_insert_id();
 		echo "Pass id=" . $ID;
-		mkdir ("G:/Echo Online Judge/UserData/" . $ID);
+		mkdir ("G:/EchoOnlineJudge/UserData/" . $ID);
 	}
 	
 	mysql_close($con);

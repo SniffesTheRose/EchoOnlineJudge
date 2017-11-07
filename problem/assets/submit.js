@@ -2,6 +2,7 @@
 
 var xmlHttp = null;	
 var editor = null;
+var sub_flag = false;
 
 $(document).ready(function(e) {
 	editor = CodeMirror.fromTextArea(document.getElementById("code"), {
@@ -24,6 +25,10 @@ $(document).ready(function(e) {
 	});
 	
 	$("button").click(function() {
+		if (sub_flag)
+			return;
+		
+		sub_flag = true;
 		var postData = "user=" + getCookie("UserID") + "&pid=" + $("button").eq(0).attr("id") + "&code=" + editor.getValue();
 
 		xmlHttp = GetXmlHttpObject();	

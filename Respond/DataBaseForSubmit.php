@@ -8,7 +8,7 @@
 	if ($encode != "UTF-8")
 		$Code = iconv($encode, "utf-8", $Code);
 		
-	$con = mysql_connect("localhost","root","qdc010325");
+	$con = mysql_connect("localhost", "root", "qdc010325");
 	
 	if (!$con) {
 		echo "Error1: ";
@@ -22,7 +22,7 @@
 	$ID = mysql_insert_id();
 	
 	$redis = new Redis();
-	$redis->connect("127.0.0.1", "6379");
+	$redis->connect("localhost", "6379");
 	$redis->rPush("Task", $ID);
 	
 	echo $ID;

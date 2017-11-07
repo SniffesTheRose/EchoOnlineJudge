@@ -3,6 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "G:/EchoOnlineJudge/include.php" ?>
+<link href="assets/result.css" rel="stylesheet" type="text/css" />
+<link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
+<script src="assets/result.js"></script>
 <title>查看提交</title>
 </head>
 
@@ -10,30 +13,12 @@
 	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
     <div class="main">
-        <div class="Container">
-            <?php
-                $con = mysql_connect("localhost","root","qdc010325");
-            
-                if (!$con) {
-                    echo "Error1: ";
-                    die('Could not connect: ' . mysql_error());
-                }
-                
-                mysql_select_db("echo_online_judge", $con);
-                
-                while (true) {
-                    $result = mysql_query("select Result,Score from submit where SubmitID='" . $_GET["id"] . "'");
-        
-                    $data = mysql_fetch_array($result);
-                    
-                    if(isset($data["Result"]) && isset($data["Score"])) {
-                        echo "评测结果  " . $data["Result"] . "     得分 " . $data["Score"] . "\n";
-                        break;
-                    }
-                    
-                    sleep(0.01);
-                }
-            ?>
+    	<div class="Container" style="text-align:left; padding-left:30px;">
+        	<b><p id="Evaluator" class="Title3"> 正在分配评测任务 </p></b>
+            <br />
+            <div id="Result" style="font-size:17px"></div>
+            <br />
+            <div id="Information" style="font-size:15px">用时：I Don't Know </div>
         </div>
     </div>
 </body>
