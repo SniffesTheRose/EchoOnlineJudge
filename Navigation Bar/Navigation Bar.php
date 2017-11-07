@@ -66,9 +66,9 @@
 	</div>";
 	
 	function UserImage($UserId) {
-		if (file_exists("G:/Echo Online Judge/UserData/" . $UserId . "/HeadSculpture.png"))
+		if (file_exists("G:/EchoOnlineJudge/UserData/" . $UserId . "/HeadSculpture.png"))
 			return "/UserData/" . $UserId . "/HeadSculpture.png";
-		else if (file_exists("G:/Echo Online Judge/UserData/" . $UserId . "/HeadSculpture.jpg"))
+		else if (file_exists("G:/EchoOnlineJudge/UserData/" . $UserId . "/HeadSculpture.jpg"))
 			return "/UserData/" . $UserId . "/HeadSculpture.jpg";
 		else
 			return "/UserData/User_Sculpture_Not_Found.png";

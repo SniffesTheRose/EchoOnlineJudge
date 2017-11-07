@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/Echo Online Judge/include.php" ?>
+<?php include "G:/EchoOnlineJudge/include.php" ?>
 
 <link rel="stylesheet" href="../CodeMirror/lib/codemirror.css" />
 <link rel="stylesheet" href="../CodeMirror/lib/util/simple-hint.css" />
@@ -27,7 +27,7 @@
 
 <body>
 
-	<?php include "G:/Echo Online Judge/BaseInclude.php" ?>
+	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
 	<div class="main">
 		<textarea id="code" name="code" style="font-size:"></textarea>

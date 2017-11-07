@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/Echo Online Judge/include.php" ?>
+<?php include "G:/EchoOnlineJudge/include.php" ?>
 <link href="assets/problem.css" rel="stylesheet" />
 <link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
 <script src="assets/problem.js"></script>
@@ -24,7 +24,7 @@
 
 <body>
 
-	<?php include "G:/Echo Online Judge/BaseInclude.php" ?>
+	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
     <div class="Title">
 		<img id="Secound_Title_Banner" class="img-rounded" src="../assets/Second_Title_Banner.png" />
