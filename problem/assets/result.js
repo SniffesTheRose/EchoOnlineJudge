@@ -5,9 +5,9 @@ var url;
 var color;
 
 $(document).ready(function(e) {
-	url = '../Respond/DataBaseForResult.php?id=' + GetQueryString("id") + '&type=Evaluator&rand=';
+	url = '../Respond/DataBaseForResult.php?id=' + GetQueryString("id") + '&type=Code&rand=';
 	xmlHttp = GetXmlHttpObject();	
-	xmlHttp.onreadystatechange = Evaluator;
+	xmlHttp.onreadystatechange = Code;
 	xmlHttp.open("GET", url + Math.random(), true);
 	xmlHttp.send(null);
 });
@@ -67,6 +67,26 @@ function Score() {
 			setTimeout(sent, 500);
 		else {
 			document.getElementById("Result").innerHTML = document.getElementById("Result").innerHTML + "\n <b style=\"color:rgb" + color + "\">" + ret + "</b>";
+		}
+	}
+}
+
+function Code() {
+	if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+		var ret = xmlHttp.responseText;
+
+		if (ret == "Couldn't find the data" || ret == '')
+			setTimeout(sent, 500);
+		else {
+			document.getElementById("code").innerHTML = stringToEntity(ret);
+			
+			hljs.initHighlighting.called = false;
+			hljs.initHighlighting();
+			
+			url = '../Respond/DataBaseForResult.php?id=' + GetQueryString("id") + '&type=Evaluator&rand=';
+			xmlHttp.onreadystatechange = Evaluator;
+			xmlHttp.open("GET", url + Math.random(), true);
+			xmlHttp.send(null);
 		}
 	}
 }

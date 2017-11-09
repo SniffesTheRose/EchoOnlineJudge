@@ -7,7 +7,14 @@ var sub_flag = false;
 $(document).ready(function(e) {
 	editor = CodeMirror.fromTextArea(document.getElementById("code"), {
 		lineNumbers: true,
-		theme: "eclipse",
+		
+		mode:"text/x-c++src",
+		
+		//缩进空格数
+		indentUnit:4,
+		
+		//tab替换
+		indentWithTabs:true,
 		
 		//代码折叠
 		lineWrapping:true,
@@ -18,18 +25,22 @@ $(document).ready(function(e) {
 		matchBrackets:true,
 		
 		extraKeys: {"Ctrl-Space": "autocomplete"}
-	});
+	});  
+	
+	editor.setSize("suto", "300px");
 	
 	$(".CodeMirror-scroll").hover(function(){
 		$(this).get(0).style.cursor = "text";
 	});
 	
-	$("button").click(function() {
+	$("#submit").click(function() {
+		
 		if (sub_flag)
 			return;
 		
 		sub_flag = true;
-		var postData = "user=" + getCookie("UserID") + "&pid=" + $("button").eq(0).attr("id") + "&code=" + editor.getValue();
+		document.getElementById("submit").disabled = true;
+		var postData = "user=" + encodeURIComponent(getCookie("UserID")) + "&pid=" + encodeURIComponent(GetQueryString("id")) + "&code=" + encodeURIComponent(editor.getValue());
 
 		xmlHttp = GetXmlHttpObject();	
 		xmlHttp.open('post','/Respond/DataBaseForSubmit.php?rand='+Math.random(),true);

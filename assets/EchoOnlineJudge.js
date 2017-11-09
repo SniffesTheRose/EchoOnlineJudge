@@ -1,11 +1,15 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-	var width = $(window).width() - 140;
+	var width = window.innerWidth - 80;
+	
 	$("div.Title").width(width);
 	$("#Title_Banner").width(width);
 	$("#Secound_Title_Banner").width(width);
-	$("div.main").width(width - 200);
+	$("div.main").width(width - 100);
+	
+	var footer = document.getElementsByTagName("footer")[0];
+	footer.style.position = document.body.scrollHeight + (footer.style.position == 'absolute' ? footer.offsetHeight : 0) > getHtmlHeight()?'':'absolute';
 	
 	$("div.main").animate({top:'+=30px'}, 0);
 	$("div.main").animate({
@@ -15,13 +19,30 @@ $(document).ready(function(e) {
 });
 
 $(window).resize(function(){
-	var width = $(window).width() - 140;
+	var width = $(window).width() - 80;
+	
 	$("div.Title").width(width);
 	$("#Title_Banner").width(width);
 	$("#Secound_Title_Banner").width(width);
-	$("div.main").width(width - 200);
+	$("div.main").width(width - 100);
+	
+	var footer = document.getElementsByTagName("footer")[0];
+	footer.style.position = document.body.scrollHeight + (footer.style.position == 'absolute' ? footer.offsetHeight : 0) > getHtmlHeight()?'':'absolute';
 });
 
+String.prototype.startWith=function(str){ 
+	var reg = new RegExp("^" + str); 
+	return reg.test(this); 
+}  
+
+String.prototype.endWith=function(str){
+	var reg = new RegExp(str + "$");
+	return reg.test(this);
+}
+
+function getHtmlHeight() {
+	return document.compatMode == "BackCompat" ? document.body.clientHeight : document.documentElement.clientHeight;
+}
 
 function GetQueryString(name) {
      var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -52,16 +73,6 @@ function getCookie(c_name) {
 	return ""
 }
 
-String.prototype.startWith=function(str){ 
-	var reg = new RegExp("^" + str); 
-	return reg.test(this); 
-}  
-
-String.prototype.endWith=function(str){
-	var reg = new RegExp(str + "$");
-	return reg.test(this);
-}
-
 function GetXmlHttpObject() {
 	var xmlHttp=null;
 	
@@ -76,4 +87,13 @@ function GetXmlHttpObject() {
 	}
 	
 	return xmlHttp;
+}
+
+function stringToEntity(str){
+	var div = document.createElement('div');
+	div.innerText = str;
+	div.textContent = str;
+	var res = div.innerHTML;
+	console.log(str,'->',res);
+	return res;
 }

@@ -2,41 +2,45 @@
 
 div.Left_Profile_Container {
 	text-align:center;
-	margin-top:25px;
-	margin-bottom:40px;
+	margin-bottom:30px;
 	position:relative;
+	top:25px;
 	height:100px;
+}
+
+img {
+	position:relative;
 }
 
 div.Left_Profile_Image_Container {
 	margin:auto;
-	width:70px;
+	width:65px;
 	height:70px;
 }
 
 span.Badge_Point {
 	position:relative;
-	top:-70px;
-	left:30px
+	top:-60px;
+	left:20px
 }
 
 div.Left_Profile_Text {
-	font-size:20px;
-	margin-top:15px;
-	display:none;
+	font-size:15px;
+	margin-bottom:5px;
+	opacity:0;
 }
 
-div.Left_Naviqation:hover{
-	width:200px;
+div.Left_Naviqation:hover {
+	width:150px;
 }
 
 div.Left_Naviqation {
 	color:rgb(255,255,255);
-	z-index:1;
+	z-index:100;
 	position:fixed;
 	left:0px;
-	height: 500px;
-	width:100px;
+	height: 390px;
+	width:65px;
 	background-image:url(assets/LeftBackGround.jpg);
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -51,24 +55,22 @@ div.Left_Naviqation a {
 }
 
 div.Left_Naviqation_Container {
-	margin-top:15px;
-	margin-bottom:15px;
 	position:relative;
 	height:50px;
 }
 
 div.Left_Naviqation_Label {
 	position:absolute;
-	left:20px;
+	left:15px;
 	width:50px;
 }
 
 p.Left_Naviqation_Label_Text {
-	display:none;
-	font-size:20px;
+	opacity:0;
+	font-size:15px;
 	position:relative;
 	width:auto;
-	left:100px;
-	line-height:50px;
+	left:60px;
+	line-height:30px;
 	vertical-align:central;
 }

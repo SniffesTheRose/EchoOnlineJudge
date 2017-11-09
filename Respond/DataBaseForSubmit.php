@@ -4,6 +4,7 @@
 	$Code = $_POST["code"];
 	
 	$encode = mb_detect_encoding($Code, array("ASCII", "UTF-8", "GB2312", "GBK", "BIG5"));
+	$Code = str_replace("\n", "\\n", $Code);
 	
 	if ($encode != "UTF-8")
 		$Code = iconv($encode, "utf-8", $Code);

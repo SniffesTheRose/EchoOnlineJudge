@@ -5,7 +5,6 @@
 <?php include "G:/EchoOnlineJudge/include.php" ?>
 <link href="assets/list.css" rel="stylesheet" />
 <title>题目列表</title>
-<link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -44,5 +43,8 @@
 			}
         ?>
     </div>
+    
+    <?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+    
 </body>
 </html>

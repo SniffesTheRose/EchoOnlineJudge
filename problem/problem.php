@@ -4,7 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "G:/EchoOnlineJudge/include.php" ?>
 <link href="assets/problem.css" rel="stylesheet" type="text/css" />
-<link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
 <script src="assets/problem.js"></script>
 <?php
 	$con = mysql_connect("localhost","root","qdc010325");
@@ -215,5 +214,8 @@
             </div>
         </div>
     </div>
+    
+	<?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+    
 </body>
 </html>

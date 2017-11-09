@@ -6,7 +6,6 @@
 
 <link rel="stylesheet" href="../CodeMirror/lib/codemirror.css" />
 <link rel="stylesheet" href="../CodeMirror/lib/util/simple-hint.css" />
-<link rel="stylesheet" href="../CodeMirror/theme/eclipse.css" />
 
 <script src="../CodeMirror/lib/codemirror.js"></script>
 <script src="../CodeMirror/lib/util/simple-hint.js"></script>
@@ -22,6 +21,9 @@
 <script src="../CodeMirror/addon/hint/show-hint.js"></script>
 <script src="../CodeMirror/addon/hint/anyword-hint.js"></script>
 
+<!--语言-->
+<script src="../CodeMirror/mode/clike/clike.js"></script>
+
 <title>提交代码</title>
 </head>
 
@@ -30,11 +32,14 @@
 	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
 	<div class="main">
-		<textarea id="code" name="code" style="font-size:"></textarea>
+		<textarea id="code" name="code" style="height:300px;"></textarea>
     </div>
     
     <div class="main" style="text-align:center">
-		<button id="<?php echo $_GET["id"] ?>" type="button" class="btn btn-info" style="font-size:20px; margin-top:20px; background-color:rgb(15,224,186)">递交我的代码</button>
+		<button id="submit" type="button" class="btn btn-info" style="font-size:20px; margin-top:20px; margin-right:40px; background-color:rgb(15,224,186)">递交我的代码</button>
     </div>
+    
+	<?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+    
 </body>
 </html>

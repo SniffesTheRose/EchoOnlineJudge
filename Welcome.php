@@ -3,9 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "Include.php" ?>
-<title>WelCome to Echo</title>
 <link href="assets/Welcome.css" rel="stylesheet" type="text/css" />
-<link href="assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
+<title>WelCome to Echo</title>
 </head>
 
 <?php

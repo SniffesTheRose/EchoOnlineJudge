@@ -4,8 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php include "G:/EchoOnlineJudge/include.php" ?>
 <link href="assets/result.css" rel="stylesheet" type="text/css" />
-<link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
+<script src="../highlight/highlight.pack.js"></script>
 <script src="assets/result.js"></script>
+<link href="../highlight/styles/vs.css" rel="stylesheet" type="text/css" />
+<script src="../highlight/highlight.pack.js"></script>
 <title>查看提交</title>
 </head>
 
@@ -19,7 +21,14 @@
             <div id="Result" style="font-size:17px"></div>
             <br />
             <div id="Information" style="font-size:15px">用时：I Don't Know </div>
+            <br /><br /><br />
+            <b><p class="Title3">查看代码:</p></b>
+            <br />
+            <pre style="margin-right:30px"><code id="code"></code></pre>
         </div>
     </div>
+    
+	<?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+    
 </body>
 </html>

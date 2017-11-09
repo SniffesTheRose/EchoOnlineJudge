@@ -33,5 +33,7 @@
     </div>
 </div>
 
+<?php include "FooterInclude.php" ?>
+
 </body>
 </html>

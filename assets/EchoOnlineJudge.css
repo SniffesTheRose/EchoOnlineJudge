@@ -1,20 +1,24 @@
 @charset "utf-8";
 /* CSS Document */
-
 body {
 	background-color:rgb(237, 240, 242);
 }
 
+footer {
+	width:100%;
+	bottom:0px;
+}
+
 img.TitlePosition {
 	position:absolute;
-	left:100px;
+	left:80px;
 	top:70px;
 }
 
 div.Title {
 	position:relative;
 	width:auto;
-	margin-left:120px;
+	margin-left:80px;
 	margin-right:10px;
 }
 
@@ -23,7 +27,7 @@ div.main {
 	position:relative;
 	width:auto;
 	margin-top:30px;
-	margin-left:220px;
+	margin-left:130px;
 }
 
 div.Container {

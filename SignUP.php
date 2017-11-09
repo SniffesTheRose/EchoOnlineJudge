@@ -14,6 +14,27 @@
 ?>
 
 <div class="main">
+<div class="container-fluid text-center">  
+    <button id="show" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="display:none"></button>
+    <!-- 模态框（Modal） -->  
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+        <div class="modal-dialog">  
+            <div class="modal-content">  
+                <div class="modal-header">  
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">输入您的验证码</h4>  
+                </div>  
+                <div class="modal-body">  
+                    <input type="text" class="form-control" id="key" placeholder="请输入验证码">
+                </div>  
+                <div class="modal-footer">  
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭 </button>  
+                    <button id="submit" type="button" class="btn btn-primary" data-dismiss="modal">提交</button>  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+
     <div class="Container">
   		<p class="Title1">创建你的 Echo 账号</p>
         <img class="Title1" src="assets/Title_Black.png" class="TitlePosition"/>
@@ -37,6 +58,8 @@
         </form>
     </div>
 </div>
+
+<?php include "FooterInclude.php" ?>
 
 </body>
 </html>

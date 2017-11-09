@@ -10,8 +10,8 @@ function Submit() {
 	Password = $("#password").val();
 	xmlHttp = GetXmlHttpObject();	
 	var url = "Respond/DataBaseForSignIN.php";
-	url += "?name=" + Name;
-	url += "&password=" + Password;
+	url += "?name=" + encodeURIComponent(Name);
+	url += "&password=" + encodeURIComponent(Password);
 	url += "&sid=" + Math.random();
 
 	UserName = Name;
