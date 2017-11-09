@@ -15,7 +15,7 @@ img {
 div.Left_Profile_Image_Container {
 	margin:auto;
 	width:65px;
-	height:70px;
+	height:65px;
 }
 
 span.Badge_Point {
@@ -26,7 +26,7 @@ span.Badge_Point {
 
 div.Left_Profile_Text {
 	font-size:15px;
-	margin-bottom:5px;
+	margin-top:10px;
 	opacity:0;
 }
 
@@ -39,7 +39,7 @@ div.Left_Naviqation {
 	z-index:100;
 	position:fixed;
 	left:0px;
-	height: 390px;
+	height: 340px;
 	width:65px;
 	background-image:url(assets/LeftBackGround.jpg);
 	border-top-right-radius: 10px;
@@ -56,13 +56,14 @@ div.Left_Naviqation a {
 
 div.Left_Naviqation_Container {
 	position:relative;
-	height:50px;
+	height:30px;
+	margin-bottom:10px;
 }
 
 div.Left_Naviqation_Label {
+	text-align:center;
 	position:absolute;
-	left:15px;
-	width:50px;
+	width:65px;
 }
 
 p.Left_Naviqation_Label_Text {

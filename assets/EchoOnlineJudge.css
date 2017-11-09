@@ -11,15 +11,13 @@ footer {
 
 img.TitlePosition {
 	position:absolute;
-	left:80px;
+	left:180px;
 	top:70px;
 }
 
 div.Title {
 	position:relative;
-	width:auto;
-	margin-left:80px;
-	margin-right:10px;
+	width:100%;
 }
 
 div.main {

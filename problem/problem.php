@@ -26,8 +26,7 @@
 	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
     
     <div class="Title">
-		<img id="Secound_Title_Banner" class="img-rounded" src="../assets/Second_Title_Banner.png" />
-        <link href="../assets/EchoOnlineJudge.css" rel="stylesheet" type="text/css" />
+		<img id="Secound_Title_Banner" class="img-rounded" src="../assets/Second_Title_Banner.png" width="100%" />
         <?php
 			$con = mysql_connect("localhost","root","qdc010325");
 	

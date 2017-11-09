@@ -17,10 +17,16 @@
 	else
 		echo "<div class=\"col-md-12 column\" style=\"padding-left:15px; padding-right:15px;\">
 				<div class=\"col-md-6 column\" style=\"padding:0\">
-					<a href=\"/SignIN.php\">登陆</a>
+					<a href=\"/SignIN.php\">
+						<i id=\"icon1\" class=\"fa fa-sign-in\" aria-hidden=\"true\" style=\"display:none \"></i>
+						登陆
+					</a>
 				</div>
 				<div class=\"col-md-6 column\" style=\"padding:0\">
-					<a href=\"SignUP.php\">注册</a>
+					<a href=\"SignUP.php\">
+						<i id=\"icon2\" class=\"fa fa-user-plus\" aria-hidden=\"true\" style=\"display:none \"></i>
+						注册
+					</a>
 				</div>
 			</div>";
 	
@@ -30,7 +36,7 @@
 		<div class=\"Left_Naviqation_Container\">
 			<a href=\"/index.php\">
 				<div class=\"Left_Naviqation_Label\">
-					<span class=\"glyphicon glyphicon-home\" style=\"color: rgb(200, 165, 49); font-size: 30px;\"></span>
+					<i class=\"fa fa-home\" aria-hidden=\"true\" style=\"font-size:30px\"></i>
 				</div>
 				<p class=\"Left_Naviqation_Label_Text\" style=\"top:3px\">回到主页</p>
 			</a>
@@ -38,26 +44,26 @@
 		<div class=\"Left_Naviqation_Container\">
 			<a href=\"/problem/list.php\">
 				<div class=\"Left_Naviqation_Label\" style=\"top:10px\">
-					<span class=\"glyphicon glyphicon-list-alt\" style=\"color: rgb(255, 140, 60); font-size: 30px;\"></span>
+					<i class=\"fa fa-list\" aria-hidden=\"true\" style=\"font-size:27px\"></i>
 				</div>
-				<p href=\"/problem/list.php\" class=\"Left_Naviqation_Label_Text\" style=\"top:10px\">题目列表</p>
+				<p class=\"Left_Naviqation_Label_Text\" style=\"top:10px\">题目列表</p>
 			</a>
 		</div>
 		<div class=\"Left_Naviqation_Container\">
 			<div class=\"Left_Naviqation_Label\" style=\"top:10px\">
-				<span class=\"glyphicon glyphicon-share-alt\" style=\"color: rgb(255, 140, 60); font-size: 30px;\"></span>
+				<i class=\"fa fa-history\" aria-hidden=\"true\" style=\"font-size:30px\"></i>
 			</div>
 			<p class=\"Left_Naviqation_Label_Text\" style=\"top:10px\">测评记录</p>
 		</div>
 		<div class=\"Left_Naviqation_Container\">
 			<div class=\"Left_Naviqation_Label\" style=\"top:10px\">
-				<span class=\"glyphicon glyphicon-star\" style=\"color: rgb(255, 140, 60); font-size: 30px;\"></span>
+				<i class=\"fa fa-users\" aria-hidden=\"true\" style=\"font-size:27px\"></i>
 			</div>
 			<p class=\"Left_Naviqation_Label_Text\" style=\"top:10px\">团队</p>
 		</div>
 		<div class=\"Left_Naviqation_Container\">
 			<div class=\"Left_Naviqation_Label\" style=\"top:10px\">
-				<span class=\"glyphicon glyphicon-search\" style=\"color: rgb(255, 140, 60); font-size: 30px;\"></span>
+				<i class=\"fa fa-gamepad\" aria-hidden=\"true\" style=\"font-size:30px\"></i>
 			</div>
 			<p class=\"Left_Naviqation_Label_Text\" style=\"top:10px\">比赛</p>
 		</div>

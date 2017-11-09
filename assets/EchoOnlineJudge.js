@@ -3,9 +3,6 @@
 $(document).ready(function(e) {
 	var width = window.innerWidth - 80;
 	
-	$("div.Title").width(width);
-	$("#Title_Banner").width(width);
-	$("#Secound_Title_Banner").width(width);
 	$("div.main").width(width - 100);
 	
 	var footer = document.getElementsByTagName("footer")[0];
@@ -20,10 +17,7 @@ $(document).ready(function(e) {
 
 $(window).resize(function(){
 	var width = $(window).width() - 80;
-	
-	$("div.Title").width(width);
-	$("#Title_Banner").width(width);
-	$("#Secound_Title_Banner").width(width);
+
 	$("div.main").width(width - 100);
 	
 	var footer = document.getElementsByTagName("footer")[0];
