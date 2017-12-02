@@ -11,7 +11,7 @@
 	
 	mysql_select_db("echo_online_judge", $con);
 	
-	$result = mysql_query("select " . $type . " from submit where SubmitID='" . $id . "'");
+	$result = mysql_query("select " . $type . " from submit where ID='" . $id . "'");
 	
 	if (!$result)
 		echo "Couldn't find the data";

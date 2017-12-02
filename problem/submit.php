@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/EchoOnlineJudge/include.php" ?>
+<?php include "../include.php" ?>
 
 <link rel="stylesheet" href="../CodeMirror/lib/codemirror.css" />
 <link rel="stylesheet" href="../CodeMirror/lib/util/simple-hint.css" />
@@ -29,7 +29,7 @@
 
 <body>
 
-	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
+	<?php include "../BaseInclude.php" ?>
     
 	<div class="main">
 		<textarea id="code" name="code" style="height:300px;"></textarea>
@@ -39,7 +39,7 @@
 		<button id="submit" type="button" class="btn btn-info" style="font-size:20px; margin-top:20px; margin-right:40px; background-color:rgb(15,224,186)">递交我的代码</button>
     </div>
     
-	<?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+	<?php include "..\FooterInclude.php" ?>
     
 </body>
 </html>

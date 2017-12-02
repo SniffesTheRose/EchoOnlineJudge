@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/EchoOnlineJudge/include.php" ?>
+<?php include "../include.php" ?>
 <link href="assets/list.css" rel="stylesheet" />
 <title>题目列表</title>
 </head>
 
 <body>
 	
-	<?php include "G:\EchoOnlineJudge\BaseInclude.php" ?>
+	<?php include "..\BaseInclude.php" ?>
     
     <div class="main">
 		<?php
@@ -44,7 +44,7 @@
         ?>
     </div>
     
-    <?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+    <?php include "..\FooterInclude.php" ?>
     
 </body>
 </html>

@@ -1,19 +1,23 @@
 <?php	
-	$File = "/UserData/User_Sculpture_Not_Found.png";
+	$UserImageFile = "/UserData/User_Sculpture_Not_Found.png";
 	
 	if (isset($_COOKIE["UserID"]))
-		$File = UserImage($_COOKIE["UserID"]);
+		$UserImageFile = UserImage($_COOKIE["UserID"]);
+
+	if (isset($_COOKIE["UserID"]))
+		echo "<a href=\"../Users/User.php?id=" . $_COOKIE["UserID"] . "\">";
 
 	echo "<div id=\"Left_Naviqation\" class=\"Left_Naviqation na\">
 		<div class=\"Left_Profile_Container\">
 			<div class=\"Left_Profile_Image_Container\">
-				<img id=\"user\" width=\"55px\" class=\"img-circle\" src=\"" . $File . "\" />
+				<img id=\"user\" width=\"55px\" class=\"img-circle\" src=\"" . $UserImageFile . "\" />
 				<span id=\"badge\" class=\"badge badge-info Badge_Point\">1</span>
+				<a href=\"../Users/Settings.php\"><span class=\"badge badge-info settings\"><i class=\"fa fa-cog\"></i></span></a>
 			</div>
 			<div class=\"row clearfix Left_Profile_Text\">";
 	
 	if (isset($_COOKIE["UserName"]))
-	echo "<div class=\"col-md-12 column\">" . urldecode($_COOKIE["UserName"]) . "</div>";
+		echo "<div class=\"col-md-12 column\">" . urldecode($_COOKIE["UserName"]) . "</div>";
 	else
 		echo "<div class=\"col-md-12 column\" style=\"padding-left:15px; padding-right:15px;\">
 				<div class=\"col-md-6 column\" style=\"padding:0\">
@@ -29,6 +33,9 @@
 					</a>
 				</div>
 			</div>";
+	
+	if (isset($_COOKIE["UserID"]))
+		echo "</a>";
 	
 	echo"</div>
 		</div>
@@ -71,10 +78,10 @@
 	
 	function UserImage($UserId) {
 		if (file_exists("G:/EchoOnlineJudge/UserData/" . $UserId . "/HeadSculpture.png"))
-			return "/UserData/" . $UserId . "/HeadSculpture.png";
+			return "\UserData/" . $UserId . "/HeadSculpture.png";
 		else if (file_exists("G:/EchoOnlineJudge/UserData/" . $UserId . "/HeadSculpture.jpg"))
-			return "/UserData/" . $UserId . "/HeadSculpture.jpg";
+			return "\UserData/" . $UserId . "/HeadSculpture.jpg";
 		else
-			return "/UserData/User_Sculpture_Not_Found.png";
+			return "\UserData/User_Sculpture_Not_Found.png";
 	}
 ?>

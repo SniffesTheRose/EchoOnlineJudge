@@ -1,6 +1,43 @@
 @charset "utf-8";
 /* CSS Document */
 
+small {
+	position:relative;
+	left:3px;
+}
+
+div.SubmitInformationArae {
+	position:absolute;
+	left:140px;
+	line-height:35px;
+	top:25px;
+}
+
+div.UserInformation {
+	border-radius:20px;
+	position:absolute;
+	background-color:rgb(255,255,102);
+	display:inline-block;
+	top:30px;
+	right:30px;
+	width:400px;
+	height:150px;
+}
+
+div.AnimationArea_Left {
+	position:relative;
+	display:inline-block;
+	width:90px;
+}
+div.AnimationArea_Right {
+	text-align:center;
+	position:relative;
+	top:-60px;
+	height:90px;
+	left:90px;
+	width:90px;
+}
+
 div.resultBlock {
 	text-align:center;
 	position:relative;
@@ -9,4 +46,12 @@ div.resultBlock {
 	float:left;
 	width:90px;
 	height:90px;
+}
+
+div.resultSpace {
+	overflow:hidden;
+	display:inline-block;
+	width:90px;
+	height:90px;
+	margin:10px;
 }

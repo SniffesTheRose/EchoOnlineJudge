@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<?php include "G:/EchoOnlineJudge/include.php" ?>
+<?php include "../include.php" ?>
 <link href="assets/problem.css" rel="stylesheet" type="text/css" />
 <script src="assets/problem.js"></script>
 <?php
@@ -23,7 +23,7 @@
 
 <body>
 
-	<?php include "G:/EchoOnlineJudge/BaseInclude.php" ?>
+	<?php include "../BaseInclude.php" ?>
     
     <div class="Title">
 		<img id="Secound_Title_Banner" class="img-rounded" src="../assets/Second_Title_Banner.png" width="100%" />
@@ -89,7 +89,7 @@
                 </div>
         	</div>
         </div>
-        <div class="Container" style="text-align:left; padding-left:50px">
+        <div class="Container" style="text-align:left; padding-left:50px; padding-right:50px">
         	<?php
 				$con = mysql_connect("localhost","root","qdc010325");
 			
@@ -139,20 +139,18 @@
 						
 						echo
 							"<div class=\"row clearfix\">
-								<div class=\"col-md-5 column\">
+								<div class=\"col-md-6 column\">
 									<p class=\"Title4\" style=\"font-weight:bold\">输入样例#" . $i . "</p>
 									<pre>" .
 									$_data["SampleInput" . $i]
 								. "</pre>
 								</div>
-								<div class=\"col-md-1 column\"></div>
-								<div class=\"col-md-5 column\">
+								<div class=\"col-md-6 column\">
 									<p class=\"Title4\" style=\"font-weight:bold\">输出样例#" . $i . "</p>
 									<pre>" .
 									$_data["SampleOutput" . $i]
 								. "</pre>
 								</div>
-								<div class=\"col-md-1 column\"></div>
 							</div>";
 					}
 				}
@@ -214,7 +212,7 @@
         </div>
     </div>
     
-	<?php include "G:\EchoOnlineJudge\FooterInclude.php" ?>
+	<?php include "..\FooterInclude.php" ?>
     
 </body>
 </html>

@@ -1,5 +1,12 @@
 /* CSS Document */
 
+span.settings {
+	position:absolute;
+	opacity:0;
+	left:80px;
+	top:20px;
+}
+
 div.Left_Profile_Container {
 	text-align:center;
 	margin-bottom:30px;

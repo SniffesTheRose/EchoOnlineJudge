@@ -6,6 +6,40 @@ $(document).ready(function(){
 	
 	document.getElementById("Left_Naviqation").style.top = (win - height) / 2 + "px";
 	
+	$("div.Left_Profile_Image_Container").mouseenter(function(e) {
+		if ($("div.Left_Naviqation").width() != 150)
+			return;
+		$("#user").stop().animate({
+			top:"-15px",
+			left:"-30px",
+			width:"80px"
+		});
+		$("#badge").stop().animate({
+			top:"-93px",
+			left:"10.5px"
+		});
+        $("span.settings").stop().animate({
+			opacity:'1',
+			left:"120px"
+		});
+    });
+	
+	$("div.Left_Profile_Image_Container").mouseleave(function(e) {
+		$("#user").stop().animate({
+			top:"-15px",
+			left:"-7.5px",
+			width:"80px"
+		});
+		$("#badge").stop().animate({
+			top:"-93px",
+			left:"33px"
+		});
+        $("span.settings").stop().animate({
+			opacity:'0',
+			left:"80px"
+		});
+    });
+	
 	$("div.Left_Naviqation").mouseenter(function() {
 		$("div.Left_Profile_Text").stop().animate({opacity:'1'});
 		$("p.Left_Naviqation_Label_Text").stop().animate({opacity:'1'});

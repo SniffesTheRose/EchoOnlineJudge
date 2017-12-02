@@ -3,6 +3,7 @@
 var xmlHttp = null;	
 var editor = null;
 var sub_flag = false;
+var change_flag = true;
 
 $(document).ready(function(e) {
 	editor = CodeMirror.fromTextArea(document.getElementById("code"), {
@@ -25,9 +26,9 @@ $(document).ready(function(e) {
 		matchBrackets:true,
 		
 		extraKeys: {"Ctrl-Space": "autocomplete"}
-	});  
+	});
 	
-	editor.setSize("suto", "300px");
+	editor.setSize("auto", "300px");
 	
 	$(".CodeMirror-scroll").hover(function(){
 		$(this).get(0).style.cursor = "text";

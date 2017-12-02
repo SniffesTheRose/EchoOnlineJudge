@@ -5,14 +5,13 @@ $(document).ready(function(e) {
 	
 	$("div.main").width(width - 100);
 	
-	var footer = document.getElementsByTagName("footer")[0];
-	footer.style.position = document.body.scrollHeight + (footer.style.position == 'absolute' ? footer.offsetHeight : 0) > getHtmlHeight()?'':'absolute';
-	
 	$("div.main").animate({top:'+=30px'}, 0);
 	$("div.main").animate({
 		top:'-=30px',
 		opacity:'1'
 	}, 500);
+	
+	$(window).resize();
 });
 
 $(window).resize(function(){
