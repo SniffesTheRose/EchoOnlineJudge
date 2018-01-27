@@ -189,25 +189,21 @@
 			?>
         </div>
         <div class="Container" style="padding:0">
-            <div class="row clearfix">
-            	<a href="submit.php?id=<?php echo $_GET["id"] ?>">
-                    <div class="col-md-3 column" style="padding-right:0" onmouseover="Enter(1)" onmouseout="Leave(1)">
-                        <div class="line" id="Button_Line1"></div>
-                        <div class="text_button Title4" id="Button1">递交</div>
-                    </div>
-                </a>
-                <div class="col-md-3 column" style="padding:0px;" onmouseover="Enter(2)" onmouseout="Leave(2)">
-                	<div class="line" id="Button_Line2"></div>
-                    <div class="text_button Title4" id="Button2">讨论</div>
-                </div>
-                <div class="col-md-3 column" style="padding:0px;" onmouseover="Enter(3)" onmouseout="Leave(3)">
-                	<div class="line" id="Button_Line3"></div>
-                    <div class="text_button Title4" id="Button3">题解</div>
-                </div>
-                <div class="col-md-3 column" style="padding-left:0" onmouseover="Enter(4)" onmouseout="Leave(4)">
-                	<div class="line" id="Button_Line4"></div>
-                    <div class="text_button Title4" id="Button4">评测记录</div>
-                </div>
+            <div class="bottom_button" onclick="JumpToSubmit()" onmouseover="Enter(1)" onmouseout="Leave(1)">
+                <div class="line" id="Button_Line1"></div>
+                <div class="text_button Title4" id="Button1">递交</div>
+            </div>
+            <div class="bottom_button" onmouseover="Enter(2)" onmouseout="Leave(2)">
+                <div class="line" id="Button_Line2"></div>
+                <div class="text_button Title4" id="Button2">讨论</div>
+            </div>
+            <div class="bottom_button" onmouseover="Enter(3)" onmouseout="Leave(3)">
+                <div class="line" id="Button_Line3"></div>
+                <div class="text_button Title4" id="Button3">题解</div>
+            </div>
+            <div class="bottom_button" onmouseover="Enter(4)" onmouseout="Leave(4)">
+                <div class="line" id="Button_Line4"></div>
+                <div class="text_button Title4" id="Button4">评测记录</div>
             </div>
         </div>
     </div>

@@ -41,6 +41,30 @@ div.Container {
 	padding-top:30px;
 }
 
+div.PromptBoxColerLine {
+	position:absolute;
+	left:0px;
+	top:7px;
+	height:46px;
+	width:5px;
+	background-color:rgb(255,255,0);
+}
+
+div.PromptBox {
+	padding-right:30px;
+	padding-left:40px;
+	font-size:20px;
+	color:rgb(255,255,255);
+	z-index:100;
+	position:fixed;
+	bottom:50px;
+	right:0px;
+	min-width:100px;
+	height:60px;
+	line-height:60px;
+	background-color:rgb(100,100,100);
+}
+
 .Title1 {
 	font-size:40px;
 }

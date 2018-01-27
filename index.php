@@ -7,9 +7,7 @@
 </head>
 
 <body>
-
 <?php include "BaseInclude.php"; ?>
-
 <div class="main">
 	<div class="Container">
     	<p class="Title1">欢迎来到 Echo Online Judge</p>
@@ -17,6 +15,5 @@
 </div>
 
 <?php include "FooterInclude.php" ?>
-
 </body>
 </html>

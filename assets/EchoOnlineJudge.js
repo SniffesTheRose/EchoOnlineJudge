@@ -1,5 +1,7 @@
 // JavaScript Document
 
+var Prompt_Box_id = 0;
+
 $(document).ready(function(e) {
 	var width = window.innerWidth - 80;
 	
@@ -89,4 +91,44 @@ function stringToEntity(str){
 	var res = div.innerHTML;
 	console.log(str,'->',res);
 	return res;
+}
+
+function creadPromptBox(str) {
+	$(".PromptBox").animate({
+		bottom:"+=70px"
+	}, 300);
+	
+	var div = document.createElement("div");
+	var temp;
+	
+	setTimeout(function() {
+		var col = document.createElement("div");
+		col.className = "PromptBoxColerLine";
+		
+		div.innerHTML = str;
+		div.className = "PromptBox";
+		div.id = "Prompt_Box_" + (++Prompt_Box_id);
+		
+		temp = Prompt_Box_id;
+		
+		div.appendChild(col);
+		
+		document.body.appendChild(div);
+		
+		div.style.right = -div.offsetWidth + "px";
+		
+		$("#Prompt_Box_" + temp).animate({
+			right:"0px"
+		}, 300);
+	}, 300);
+	
+	setTimeout(function() {
+		$("#Prompt_Box_" + temp).animate({
+			opacity:"0"
+		}, 200);
+		
+		setTimeout(function() {
+			document.body.removeChild(div);
+		}, 200);
+	}, 10000);
 }

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.Container_for_List {
+	text-align:left;
+	position:relative;
+	width:auto;
+	height:auto;
+	background-color:#FFF;
+	box-shadow: 5px 5px 30px #CCCCCC;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+div.Basic_Information {
+	padding-bottom:5px;
+	font-size:18px; 
+	display:inline-block;
+	position:relative;
+	left:30px;
+	top:18px;
+	min-width:150px;
+	line-height:15px;
+}

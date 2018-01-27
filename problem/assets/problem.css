@@ -1,6 +1,13 @@
 @charset "utf-8";
 /* CSS Document */
 
+div.bottom_button {
+	display:inline-block;
+	position:relative;
+	width:24%;
+	height:100%;
+}
+
 div.text_button {
 	line-height:40px;
 	text-align:center;

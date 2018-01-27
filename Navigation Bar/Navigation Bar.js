@@ -1,5 +1,4 @@
 // JavaScript Document
-
 $(document).ready(function(){
 	var win = $(window).height();
 	var height = $("#Left_Naviqation").height();
@@ -7,8 +6,6 @@ $(document).ready(function(){
 	document.getElementById("Left_Naviqation").style.top = (win - height) / 2 + "px";
 	
 	$("div.Left_Profile_Image_Container").mouseenter(function(e) {
-		if ($("div.Left_Naviqation").width() != 150)
-			return;
 		$("#user").stop().animate({
 			top:"-15px",
 			left:"-30px",
@@ -20,7 +17,7 @@ $(document).ready(function(){
 		});
         $("span.settings").stop().animate({
 			opacity:'1',
-			left:"120px"
+			left:"110px"
 		});
     });
 	
@@ -36,7 +33,7 @@ $(document).ready(function(){
 		});
         $("span.settings").stop().animate({
 			opacity:'0',
-			left:"80px"
+			left:"40px"
 		});
     });
 	
@@ -53,6 +50,10 @@ $(document).ready(function(){
 		$("#badge").stop().animate({
 			top:"-93px",
 			left:"33px"
+		});
+		$("span.settings").stop().animate({
+			opacity:'0',
+			left:"40px"
 		});
 	});
 	

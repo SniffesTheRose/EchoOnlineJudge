@@ -8,3 +8,11 @@ function Leave(id) {
 	$("#Button_Line" + id).css("background-color", "rgb(255,255,255)");
 	$("#Button" + id).css("background-color", "rgb(255,255,255)");
 };
+
+function JumpToSubmit() {
+	if (getCookie("UserName") == "") {
+		creadPromptBox("提交前请先登录");
+		return;
+	}
+	window.location = "submit.php?id=" + GetQueryString("id");
+}
